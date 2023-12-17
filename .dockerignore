@@ -1,4 +1,22 @@
-node_modules/
-dist/
-NOTES.md/
-memo.txt/
+# Build
+dist
+node_modules
+Dockerfile
+docker-compose*
+.dockerignore
+
+# IDE
+.vscode
+
+# Misc
+docker-up
+NOTES.md
+memo.txt
+.env.example
+.gitignore
+.git
+
+# Lint
+.eslintrc
+.prettierrc
+.editorconfig

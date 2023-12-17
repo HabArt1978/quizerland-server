@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { TUserSchema, userSchema } from '../../users/schemas/user.schema'
-import UserModel, { User } from '../../users/models/user.model'
+import { TUserSchema, userSchema } from '../users/schemas/user.schema'
+import UserModel, { User } from '../users/models/user.model'
 import bcrypt from 'bcrypt'
 import { sign } from 'jsonwebtoken'
 import TokenModel from './models/token.model'

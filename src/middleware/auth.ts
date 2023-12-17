@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
-import UserModel, { User } from '../users/models/user.model'
+import UserModel, { User } from '../modules/users/models/user.model'
 import TokenModel from '../modules/auth/models/token.model'
 
 export default async (

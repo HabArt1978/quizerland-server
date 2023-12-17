@@ -1,6 +1,6 @@
 import express from 'express'
-import QuizzesController from '../modules/quizzes/quizzes.controller'
-import auth from '../middleware/auth'
+import QuizzesController from './quizzes.controller'
+import auth from '../../middleware/auth'
 
 const quizzesRoutes = express.Router()
 

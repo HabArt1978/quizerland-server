@@ -1,8 +1,12 @@
-/dist
-/NOTES.md
-/node_modules
-/memo.txt
+# Build
+.env
+dist
+node_modules
 
 # IDE
-/.vscode
-/docker-up
+.vscode
+
+# Misc
+docker-up
+NOTES.md
+memo.txt

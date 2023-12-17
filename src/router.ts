@@ -1,6 +1,6 @@
 import express from 'express'
-import authRoutes from './auth.routes'
-import quizzesRoutes from './quizzes.routes'
+import authRoutes from './modules/auth/auth.routes'
+import quizzesRoutes from './modules/quizzes/quizzes.routes'
 
 const router = express.Router()
 

@@ -3,9 +3,9 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 
-import connectToDb from './utilities/connectToDb'
 import log from './utilities/logger'
-import router from './routes/router'
+import router from './router'
+import MongoDB from './db/mongodb'
 
 const app = express()
 const PORT = process.env.APP_PORT ?? 8000
@@ -22,11 +22,11 @@ app.use(router)
 
 const start = async (): Promise<void> => {
     try {
+        await new MongoDB().connect()
+
         app.listen(PORT, () => {
             log.info(`Сервер запущен на http://localhost:${PORT}`)
         })
-
-        connectToDb()
     } catch (error) {
         log.error(error)
     }
